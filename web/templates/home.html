@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+	  <title>{{ title }}</title>
+
+	  <meta charset="utf-8">
+	  <meta name="author" content="Buonpensiero Lucrezia">
+	  <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap-3.3.7.css') }}">
+	  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+	  <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <meta name="robots" content="index, follow"/>
+
+	  <!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	  <![endif]-->
+
+    <!-- google icons -->
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+  </head>
+  <body>
+  <div class="panel panel-default">
+			<div class="panel-heading" style="padding: 70px 0; text-align: center;" >
+				<h1 style="text-align: center;" >{{ title }}</h1>
+				 <img src="https://www.skraper.net/assets/skraperlogo.png" alt="scraperlogo">
+			</div>
+
+			<div class="panel-body">
+				<div class="col-12 col-md-8 col-md-offset-2">
+					<div class="input-group">
+						<div class="input-group-btn search-panel">
+							<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+								<span id="search_concept">Cerca</span> <span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu scrollable-dropdown" role="menu">
+								<li><a href="#">Nome</a></li>
+								<li><a href="#">Console</a></li>
+								<li><a href="#">Voto</a></li>
+								<li><a href="#">Genere</a></li>
+                                <li><a href="#">Data di uscita</a></li>
+                                <li><a href="#">Descrizione</a></li>
+							</ul>
+						</div>
+						<input type="hidden" name="search_param" value="Seleziona" id="search_param">
+						<input type="text" class="form-control" name="x" id="search" placeholder="Search">
+						<span class="input-group-btn">
+							<button class="btn btn-default" type="button" id="button-search">
+								<span class="glyphicon glyphicon-search"></span>
+							</button>
+						</span>
+					</div>
+				</div>
+			</div>
+
+			<div id="loader" class="loader"></div>
+
+			<div class="row results" id="results">
+				<h3 class="text-center">Risultati:</h3>
+				<div class="col-12 col-md-8 col-md-offset-2" id="results_list"></div>
+			</div>
+
+		</div>
+
+    <script type="text/javascript" src="{{ url_for('static', filename = 'js/jquery.js') }}"></script>
+  	<script type="text/javascript" src="{{ url_for('static', filename = 'js/bootstrap.js') }}"></script>
+  	<script type="text/javascript" src="{{ url_for('static', filename = 'js/home.js') }}"></script></script>
+  </body>
+</html>

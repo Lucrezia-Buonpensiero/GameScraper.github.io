@@ -1,0 +1,63 @@
+/* scroll bar in dropdown */
+.scrollable-dropdown{
+    height: auto;
+    max-height: 320px;  /* Increase / Decrease value as per your need */
+    overflow-x: hidden;
+}
+
+/* loader */
+.loader {
+    position: relative;
+    top: 40px;
+    display: none;
+    width: 80px;
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 10px solid #f3f3f3;
+    border-top: 10px solid #3498db;
+    border-radius: 50%;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+.loader.show {
+    display: block;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* ranking stars */
+.product-rating {
+    font-size: 36px;
+}
+
+.stars i {
+    font-size: 16px;
+    color: orange;
+}
+
+/* ranking results */
+.results {
+    display: none;
+}
+
+.results.show {
+    display: block;
+}
+
+/* text align center responsive */
+@media (min-width: 768px) {
+    .text-md-center {
+        text-align: center;
+    }
+}

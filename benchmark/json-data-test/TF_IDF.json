@@ -1,0 +1,76 @@
+{
+    "queries": [
+        {
+            "query": "nome_gioco:\"dark souls 3\" AND data",
+            "time": 97,
+            "A": 1,
+            "precision": 1.0
+        },
+        {
+            "query": "nome_gioco:\"resident evillq 2\" AND data",
+            "time": 164,
+            "A": 6,
+            "precision": 1.0
+        },
+        {
+            "query": "data:2020 AND genere:\"gioco di ruolo\"",
+            "time": 98,
+            "A": 10,
+            "precision": 0.71
+        },
+        {
+            "query": "data:2015",
+            "time": 237,
+            "A": 10,
+            "precision": 0.44
+        },
+        {
+            "query": "(data:2015 OR data:2016^2 OR data:2017^4) AND (nome_gioco:god)",
+            "time": 42,
+            "A": 6,
+            "precision": 0.39
+        },
+        {
+            "query": "nome_gioco:\"god of war\" and console:ps4",
+            "time": 37,
+            "A": 4,
+            "precision": 0.38
+        },
+        {
+            "query": "nome_gioco:\"lost planet 2\" AND data",
+            "time": 38,
+            "A": 1,
+            "precision": 0.39
+        },
+        {
+            "query": "(genere:sparatutto OR genere:fps) AND (voto:9 OR voto:10^2)",
+            "time": 46,
+            "A": 10,
+            "precision": 0.31
+        },
+        {
+            "query": "data:2022 AND (voto:10)",
+            "time": 43,
+            "A": 5,
+            "precision": 0.28
+        },
+        {
+            "query": "data:\"maggio 2022\"",
+            "time": 54,
+            "A": 10,
+            "precision": 0.24
+        }
+    ],
+    "averagePrec": [
+        1.0,
+        1.0,
+        0.71,
+        0.44,
+        0.38,
+        0.35,
+        0.35,
+        0.28,
+        0.25,
+        0.21
+    ]
+}
